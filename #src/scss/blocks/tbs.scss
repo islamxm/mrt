@@ -1,0 +1,48 @@
+.tbs {
+
+    &__in {
+        padding: 40px 0;
+    }
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        // margin: 0 15px;
+        font-size: 16px;
+        line-height: 16px;
+        color: #5C82E4;
+        display: block;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+
+@media(max-width: 1250px) {
+    .tbs {
+
+        &__in {
+            padding: 30px 0;
+        }
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .tbs {
+
+        &__in {
+            padding: 20px 0;
+        }
+    }
+}

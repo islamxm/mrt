@@ -1,0 +1,55 @@
+.bc {
+
+   
+
+    &__list {
+        display: flex;
+        align-items: center;
+        padding: 20px 0;
+        // padding-top: 0;
+    }
+
+    &__item {
+        color: $blue;
+        position: relative;
+        padding: 0 10px;
+        font-size: 18px;
+        line-height: 23px;
+
+        &:last-child {
+            color: #969696;
+
+            &:after {
+                color:#969696; 
+            }
+        }
+
+        &:first-child {
+            padding-left: 0;
+            &:after {
+                display: none;
+            }
+        }
+
+        &:after {
+            position: absolute;
+            content: '/';
+            color: $blue;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .bc {
+        
+        
+        &__item {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+}

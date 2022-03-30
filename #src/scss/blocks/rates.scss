@@ -1,0 +1,322 @@
+.rates {
+
+    &__in {
+        padding: 30px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+
+    &__content {
+        margin-right: 20px;
+
+
+
+
+        &_title {
+            margin-bottom: 40px;
+        }
+
+        &_list {
+            margin-bottom: 30px;
+        }
+
+        &_item {
+            margin-bottom: 20px;
+
+            &:last-child  {
+                margin-bottom: 0;
+            }
+            a {
+                color: $blue;
+                @include def-anim;
+                font-size: 22px;
+                line-height: 22px;
+
+                &:hover {
+                    color: $red;
+                }
+            }
+        }
+
+        &_action {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            a {
+                border: 1px solid $red;
+                color: $red;
+                @include def-anim;
+                padding: 12px;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                font-size: 16px;
+                line-height: 16px;
+
+                &:hover {
+                    background-color: $red;
+                    border-color: $red;
+                    color: #fff;
+                }
+
+                &:active {
+                    background-color: $red-active;
+                    border-color: $red-active;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    &__img {
+        max-width: 420px;
+        width: 100%;
+        border-radius: 10px;
+        background: #F0F4FF;
+        position: relative;
+        overflow: hidden;
+
+        &_body {
+            position: relative;
+            z-index: 3;
+            padding: 40px 30px;
+
+            .descr {
+                font-size: 25px;
+                line-height: 32px;
+                margin-bottom: 30px;
+            }
+
+            .ms {
+
+
+                &__item.l {
+                    justify-content: flex-start;
+
+                    .ms__item_av {
+                        margin-right: 10px;
+                        order: 1;
+                    }
+
+                    .ms__item_value {
+                        order: 2
+                    }
+                }
+
+                &__item.r {
+                    justify-content: flex-end;
+
+                    .ms__item_av {
+                        margin-left: 10px;
+                        order: 2;
+                    }
+
+                    .ms__item_value {
+                        order: 1;
+                    }
+                }
+                &__item {
+                    display: flex;
+                    align-items: flex-end;
+                    margin-bottom: 15px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    &_av {
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 100%;
+                        background-color: $red;
+                        overflow: hidden;
+                        flex: 0 0 auto;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    &_value {
+                        max-width: 264px;
+                        width: 100%;
+                        border-radius: 10px;
+                        background-color: #fff;
+                        padding: 12px;
+                        font-size: 18px;
+                        line-height: 23px;
+                    }
+                }
+            }
+        }
+
+        &:after {
+            position: absolute;
+            content: '';
+            top: -70%;
+            right: -70%;
+            width: 400px;
+            height: 400px;
+            background: #5C82E4;
+            opacity: 0.4;
+            filter: blur(130px);
+        }
+
+        &:before {
+            position: absolute;
+            content: '';
+            bottom: -70%;
+            left: -70%;
+            width: 400px;
+            height: 400px;
+            background: #FF727A;
+            opacity: 0.4;
+            filter: blur(130px);
+        }
+    }
+}
+
+@media (max-width: 900px) {
+
+    .rates {
+
+        &__in {
+            flex-wrap: wrap;
+        }
+
+        &__content {
+            max-width: unset;
+            margin-right: 0;
+            width: 100%;
+
+            order: 2;
+
+            &_action {
+                justify-content: center;
+            }
+        }
+
+        &__img {
+            max-width: unset;
+            width: 100%;
+            order: 1;
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: center;
+
+            &:after {
+                right: 0%;
+            }
+
+            &:before {
+                left: 0;
+            }
+
+
+            &_body {
+                max-width: 290px;
+                width: 100%;
+                padding: 40px 0;
+
+            }
+        }
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .rates {
+
+        &__in {
+
+        }
+
+        &__content {
+
+            &_item {
+                margin-bottom: 15px;
+                a {
+                    font-size: 18px;
+                    line-height: 23px;
+                }
+            }
+
+            &_action {
+                font-size: 16px;
+                line-height: 16px;
+            }
+        }
+
+        &__img {
+
+            &:after {
+                right: -90%;
+            }
+
+            &:before {
+                left: -90%;
+            }
+
+            &_body {
+                padding: 30px 12px;
+                max-width: unset;
+
+                .descr {
+                    font-size: 22px;
+                    line-height: 29px;
+                    margin-bottom: 20px;
+                }
+
+                .ms {
+
+                    &__item {
+                        &_value {
+                            font-size: 16px;
+                            line-height: 21px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 375px) {
+
+    .rates {
+
+        .container {
+            padding: 0;
+        }
+
+        &__img {
+            border-radius: 0;
+
+            &_body {
+
+                .ms {
+
+                    &__item {
+
+                        &_value {
+                            max-width: 220px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__content {
+            padding: 0 15px;
+        }
+    }
+}

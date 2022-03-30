@@ -1,0 +1,199 @@
+.feed {
+    padding: 40px 0;
+
+    &__in {
+        padding: 0 100px;
+        padding-bottom: 0;
+        padding-right: 80px;
+        background-color: $blue;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 10px;
+        background-image: url('../img/feed/feed-bg.png');
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: contain;
+        align-items: flex-end;
+    }
+
+    &__body {
+        width: 50%;
+        padding: 40px 0;
+
+        &_title {
+            margin-bottom: 15px;
+            color: #fff;
+
+            span {
+                font-weight: 300;
+                font-size: 35px;
+                display: block;
+                line-height: 42px;
+            }
+        }
+
+        &_descr {
+            font-size: 30px;
+            line-height: 39px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        &_input {
+            border: 1px solid #FFFFFF;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            display: block;
+            padding: 15px 20px;
+            max-width: 347px;
+            width: 100%;
+            font-size: 22px;
+            line-height: 29px;
+            color: #fff;
+
+            &::placeholder {
+                color: #96B3FF;
+            }
+        }
+
+        &_btn {
+            padding: 16px 38px;
+            border-radius: 5px;
+            background-color: $red;
+            color: #fff;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 28px;
+            cursor: pointer;
+            @include def-anim;
+            max-width: 347px;
+            width: 100%;
+            margin-bottom: 10px;
+
+            &:hover {
+                background-color: $red-active;
+            }
+        }
+
+        &_link {
+            font-size: 16px;
+            line-height: 21px;
+            color: #fff;
+
+            a {
+                font-weight: 700;
+            }
+        }
+    }
+
+    &__img {
+        img {
+            display: flex;
+        }
+    }
+}
+
+
+@media (max-width: 1200px) {
+
+    .feed {
+
+        &__in {
+            padding: 0 62px;
+        }
+
+        &__body {
+            width: 65%;
+        }
+
+        &__img {
+            width: auto;
+            display: flex;
+            align-items: flex-end;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    .feed {
+
+        .container {
+            padding: 0;
+        }
+
+        &__in {
+            padding: 0 50px;
+            position: relative;
+            border-radius: 0;
+            background-size: cover;
+        }
+
+        &__body {
+            padding: 50px 0;
+            width: 100%;
+            position: relative;
+            z-index: 2;
+        }
+
+        &__img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+
+    .feed {
+
+        &__in {
+            background-image: none;
+            padding: 0 12px;
+        }
+
+        
+
+        &__img {
+            bottom: unset;
+            top: 0;
+            justify-content: flex-end;
+        }
+
+        &__body {
+            padding: 190px 0 30px 0;
+
+            &_title {
+                margin-bottom: 10px;
+                span {
+                    font-size: 25px;
+                    line-height: 30px;
+                }
+            }
+
+            &_descr {
+                font-size: 18px;
+                line-height: 23px;
+                margin-bottom: 15px;
+            }
+
+            &_input {
+                max-width: unset;
+            }
+
+            &_btn {
+                max-width: unset;
+                padding: 15px;
+            }
+        }
+    }
+}

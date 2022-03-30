@@ -1,0 +1,122 @@
+.art {
+
+    &__img {
+        height: 294px;
+        width: 100%;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 10px 10px 0 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__body {
+        padding: 15px 0;
+
+        &_name {
+            font-size: 22px;
+            line-height: 29px;
+            display: block;
+            margin-bottom: 15px;
+            @include def-anim;
+
+            &:hover {
+                color: $red;
+            }
+        }
+
+        &_info {
+            display: flex;
+            align-items: center;
+
+            &_item {
+                margin-right: 15px;
+                position: relative;
+                padding-left: 30px;
+                color: #969696;
+                font-size: 20px;
+                line-height: 26px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &:after {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    
+                }
+            }
+
+            &_item.art__body_info_item-rep {
+
+                &:after {
+                    content: url('../img/icons/cmt.svg');
+                }
+            }
+
+            &_item.art__body_info_item-sn {
+
+                &:after {
+                    content: url('../img/icons/sn.svg');
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .art {
+
+        &__img {
+            height: 210px;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+
+    .art {
+        
+
+        &__img {
+            border-radius: 10px; 
+            overflow: hidden;
+            height: 286px;
+        }
+    }
+}
+
+
+
+@media (max-width: 450px) {
+
+    .art {
+
+        &__body {
+
+            &_name {
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+            &_info {
+
+                &_item {
+                    font-size: 16px;
+                    line-height: 20px;
+
+                    &:after {
+                        top: -4px;
+                    }
+                }
+            }
+        }
+    }
+}

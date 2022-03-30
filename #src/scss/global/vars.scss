@@ -1,0 +1,10 @@
+$text: #2F2F2F;
+$blue: #5C82E4;
+$red: #FF727A;
+$red-active: #FF3D48;
+$dgray: #585858;
+
+
+@mixin def-anim {
+    transition: all .3s ease;
+}

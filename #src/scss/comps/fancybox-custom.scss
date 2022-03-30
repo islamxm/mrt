@@ -1,0 +1,20 @@
+.fancybox__toolbar {
+    display: none;
+}
+.fancybox__thumbs {
+    display: none;
+    
+}
+
+.carousel__button {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background-color: $red;
+    top: calc(50% - (35px / 4)) !important;
+    transform: unset !important;
+}
+
+.fancybox__backdrop {
+    // background-color: #fff !important;
+}

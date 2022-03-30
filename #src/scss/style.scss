@@ -1,0 +1,39 @@
+//LIBS
+@import './libs/swiper.scss';
+
+//GLOBAL
+@import './fonts.scss';
+@import './global/vars.scss';
+@import './global/global.scss';
+
+
+
+//COMPS
+@import './comps/card.scss';
+@import './comps/filter.scss';
+@import './comps/bc.scss';
+@import './comps/fancybox-custom.scss';
+@import './comps/art.scss';
+
+
+//BLOCK
+@import './blocks/header.scss';
+@import './blocks/footer.scss';
+@import './blocks/tbs.scss';
+@import './blocks/mobmenu.scss';
+@import './blocks/hero.scss';
+@import './blocks/rates.scss';
+@import './blocks/best.scss';
+@import './blocks/pop.scss';
+@import './blocks/qts.scss';
+@import './blocks/feed.scss';
+@import './blocks/apr.scss';
+@import './blocks/list.scss';
+@import './blocks/prod.scss';
+@import './blocks/sensor.scss';
+@import './blocks/search.scss';
+@import './blocks/articles.scss';
+@import './blocks/article-notfound.scss';
+@import './blocks/notfound.scss';
+@import './blocks/vendors.scss';
+@import './blocks/vendor.scss';

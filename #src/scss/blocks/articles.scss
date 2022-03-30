@@ -1,0 +1,140 @@
+.articles {
+
+
+    &__in {
+        padding: 0 0 150px 0;
+    }
+
+    &__head {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+
+    &__filter {
+        display: flex;
+        align-items: center;
+        padding: 20px 0;
+
+        &_item {
+            margin-right: 25px;
+            color: $blue;
+            font-size: 16px;
+            line-height: 21px;
+
+            position: relative;
+            padding-right: 20px;
+
+            &:after {
+                position: absolute;
+                top: 0;
+                right: 0;
+                content: url('../img/icons/art-arrow.svg');
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &_item.active {
+
+            &:after {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px 0;
+        margin-right: -1%;
+
+        &_item {
+
+            width: calc(100% / 4.2);
+            margin-right: 1%;
+            margin-bottom: 20px;
+
+            .art__img {
+                border-radius: 10px;
+                overflow: hidden;
+                height: 172px;
+            }
+        }
+    }
+
+    &__action {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &_btn {
+            padding: 12px 57px;
+            font-size: 16px;
+            line-height: 16px;
+            color: $blue;
+            border: 1px solid $blue;
+
+            @include def-anim;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $blue;
+                color: #fff;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+
+    .articles {
+
+        &__in {
+            padding: 0 0 100px 0;
+        }
+        
+        &__head {
+            margin-bottom: 0;
+        }
+
+        &__filter {
+
+        }
+
+        &__list {
+            margin-right: 0;
+            justify-content: space-between;
+
+            &_item {
+                width: 48%;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+
+    .articles {
+        &__filter {
+            flex-direction: column;
+            align-items: flex-start;
+            &_item {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+        &__list {
+            padding: 10px 0;
+            &_item {
+
+                .art__img {
+                    height: 135px;
+                }
+            }
+        }
+    }
+}

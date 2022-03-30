@@ -1,0 +1,160 @@
+.list {
+
+    &__in {
+        display: flex;
+        align-items: flex-start;
+        padding: 0 0 40px 0;
+    }
+
+    &__body {
+        width: 100%;
+        margin-left: 20px;
+
+        &_head {
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &_btn {
+                padding-right: 62px;
+                position: relative;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 18px;
+                color: $red;
+                cursor: pointer;
+                display: none;
+                
+
+                &:after {
+                    position: absolute;
+                    right: 0;
+                    top: calc(50% - 15px);
+                    content: url('../img/icons/filter.svg');
+                }
+            }
+        }
+
+        &_items {
+            display: flex;
+            margin-right: -1%;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+
+            &_item {
+                width: calc(100% / 3.1);
+                margin-right: 1%;
+                margin-bottom: 1%;
+            }
+        }
+
+        &_action {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            button {
+                border: 1px solid $blue;
+                color: $blue;
+                padding: 12px 57px;
+                border-radius: 5px;
+                font-size: 16px;
+                line-height: 16px;
+                @include def-anim;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $blue;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1000px) {
+
+    .list {
+
+        &__in {
+
+        }
+
+        &__body {
+            margin-left: 0;
+
+            &_head {
+
+                &_btn {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+
+    .list {
+
+        
+
+        &__body {
+
+            &_items {
+                justify-content: space-between;
+                margin-right: 0;
+
+                &_item {
+                    width: 48%;
+                    margin-right: 0;
+                }
+            }
+
+            &_head {
+                &_btn {
+                    font-size: 16px;
+                    line-height: 16px;
+                    padding-right: 35px;
+    
+                    &:after {
+                        content: url('../img/icons/filter-mob.svg');
+                        top: calc(50% - 10px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 400px) {
+
+    .list {
+
+        &__body {
+
+            &_head {
+                flex-wrap: wrap;
+                &_title {
+                    width: 100%;
+                    margin-bottom: 12px;
+                }
+
+                
+            }
+            &_items {
+                justify-content: space-between;
+                margin-right: 0;
+
+                &_item {
+                    width: 100%;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
