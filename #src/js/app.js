@@ -1,3 +1,4 @@
+import { addC } from './modules/addC.js';
 import { cards } from './modules/cards.js';
 import { cmAnswer } from './modules/cmAnswer.js';
 import { examplesSlider } from './modules/examplesSlider.js';
@@ -10,6 +11,7 @@ import { prodDrop } from './modules/prodDrops.js';
 import { prodGallery } from './modules/prodGallery.js';
 import { prodSlider } from './modules/prodSlider.js';
 import { qtsSlider } from './modules/qtsSlider.js';
+import { revsSlider } from './modules/revsSlider.js';
 import { searchFieldToggler } from './modules/searchFieldToggler.js';
 import { sensorDrop } from './modules/sensorDrop.js';
 import { tbsSlider } from './modules/tbsSlider.js';
@@ -37,12 +39,11 @@ document.addEventListener('DOMContentLoaded', () => {
     cmAnswer();
     prodGallery();
     sensorDrop();
+    revsSlider();
+    addC();
 
     
 })
 
-// document.addEventListener('DOMSubtreeModified', (e) => {
-//     cards();
-    
-// })
+
 
