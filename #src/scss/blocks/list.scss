@@ -96,7 +96,7 @@
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
 
     .list {
 
@@ -109,7 +109,7 @@
                 margin-right: 0;
 
                 &_item {
-                    width: 48%;
+                    width: 49%;
                     margin-right: 0;
                 }
             }
@@ -151,8 +151,8 @@
                 margin-right: 0;
 
                 &_item {
-                    width: 100%;
-                    margin-right: 0;
+                    // width: 100%;
+                    // margin-right: 0;
                 }
             }
         }

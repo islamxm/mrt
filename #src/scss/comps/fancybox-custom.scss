@@ -1,6 +1,48 @@
 .fancybox__toolbar {
+    // display: none;
+    background: none;
+    padding: 30px 50px;
+}
+
+.fancybox__toolbar__items.fancybox__toolbar__items--left {
     display: none;
 }
+
+.fancybox__toolbar__items.fancybox__toolbar__items--right {
+
+    .fancybox__button--zoom {
+        display: none;
+    }
+
+    .fancybox__button--slideshow {
+        display: none;
+    }
+
+    .fancybox__button--fullscreen {
+        display: none;
+    }
+
+    .fancybox__button--thumbs {
+        display: none;
+    }
+
+    .fancybox__button--close {
+        background-color: transparent;
+
+        width: 40px;
+        height: 40px;
+        
+        svg {
+            width: 100%;
+            height: 100%;
+            stroke: #000;
+
+        }
+    }
+}
+
+
+
 .fancybox__thumbs {
     display: none;
     
@@ -16,5 +58,16 @@
 }
 
 .fancybox__backdrop {
-    // background-color: #fff !important;
+    background-color: #fff !important;
+}
+
+.fancybox__content {
+    width: 100% !important;
+    height: 100% !important;
+
+    img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover;
+    }
 }

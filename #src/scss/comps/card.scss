@@ -2,6 +2,7 @@
     @include def-anim;
     border-radius: 10px;
     cursor: pointer;
+    display: block !important;
     background: #FAFAFA;
     
 
@@ -26,12 +27,13 @@
         width: 100%;
         overflow: hidden;
         border-radius: 10px 10px 0 0;
+        background-color: #fff;
 
         img {
             width: 100%;
             height: 100%;
             display: flex;
-            object-fit: cover;
+            object-fit: contain;
         }
     }
 
@@ -68,7 +70,10 @@
             }
 
             .link {
-                a {
+                display: flex;
+                align-items: center;
+                
+                div {
                     color: $blue;
                     @include def-anim;
                     font-size: 18px;
@@ -159,10 +164,26 @@
             
             &_main {
 
+                .values {
+                    margin-bottom: 10px;
+                }
 
+                
+            }
+        }
+    }
+}
 
+@media (max-width: 750px) {
+
+    .card {
+
+        &__body {
+
+            &_main {
                 .values {
                     flex-wrap: wrap;
+                    
 
                     &__price {
                         width: 100%;
@@ -173,6 +194,10 @@
                         width: 100%;
                     }
                 }
+            }
+
+            &_ex {
+                display: none;
             }
         }
     }
@@ -199,17 +224,20 @@
             &_main {
                 padding: 15px 0;
 
+                .name {
+                    margin-bottom: 10px;
+                }
+
                 .values {
-                    flex-wrap: nowrap;
-                    margin-bottom: 15px;
+                    flex-wrap: wrap;
 
                     &__price {
-                        width: unset;
-                        margin-bottom: 0;
+                        width: 100%;
+                        margin-bottom: 10px;
                     }
 
                     &__cnt {
-                        width: unset;
+                        width: 100%;
                     }
                 }
             }
@@ -221,7 +249,13 @@
 
     .card {
 
+        &__img {
+            height: 136px;
+        }
+
         &__body {
+
+            
 
             &_main {
 

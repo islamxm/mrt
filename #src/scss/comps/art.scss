@@ -1,5 +1,13 @@
 .art {
+    display: block;
 
+    &:hover {
+
+        .art__body_name {
+            color: $red;
+        }
+    }
+    
     &__img {
         height: 294px;
         width: 100%;
@@ -24,9 +32,7 @@
             margin-bottom: 15px;
             @include def-anim;
 
-            &:hover {
-                color: $red;
-            }
+            
         }
 
         &_info {
@@ -98,6 +104,10 @@
 @media (max-width: 450px) {
 
     .art {
+        
+        &__img {
+            height: 136px;
+        }
 
         &__body {
 

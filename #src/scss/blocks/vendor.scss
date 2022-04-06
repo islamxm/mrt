@@ -72,6 +72,7 @@
         &_list {
 
             &_item {
+                
                 margin-bottom: 30px;
                 .head {
                     margin-bottom: 20px;
@@ -89,8 +90,10 @@
                     display: flex;
                     flex-wrap: wrap;
                     margin-right: -1%;
+                    width: 75%;
+                    
 
-                    &__item {
+                    &__item.card {
                         width: calc(100% / 3.1);
                         margin-right: 1%;
                         margin-bottom: 20px;
@@ -102,6 +105,7 @@
                     align-items: center;
                     justify-content: center;
                     padding: 20px 0 30px 0;
+                    width: 75%;
 
                     &__btn {
                         padding: 12px 57px;
@@ -149,8 +153,13 @@
 
                         justify-content: space-between;
 
-                        &__item {
-                            width: 48%;
+                        &__item.card {
+                            width: 48.5%;
+
+
+                            .list__item {
+                                width: 100%;
+                            }
                         }
                     }
                 }
@@ -159,7 +168,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
 
     .vendor {
 
@@ -212,10 +221,16 @@
                     }
 
                     .list {
+                        width: 100%;
 
                         &__item {
-                            width: 100%;
+                            // width: 100%;
                         }
+                        
+                    }
+
+                    .more {
+                        width: 100%;
                     }
                 }
             }
