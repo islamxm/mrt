@@ -13,6 +13,7 @@ export const examplesSlider = () => {
         breakpoints: {
             500: {
                 slidesPerView: 2,
+                spaceBetween: 12
             }
         }
     });

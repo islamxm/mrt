@@ -156,6 +156,20 @@
 
     .card {
 
+
+        &:hover {
+            background: #FAFAFA;
+            border-radius: 10px;
+            box-shadow: none;
+
+            .card__body_main {
+                padding: 20px 0;
+            }
+
+            .card__body_ex {
+                display: none;
+            }
+        }
         &__img {
             height: 210px;
         }
@@ -177,7 +191,7 @@
 @media (max-width: 750px) {
 
     .card {
-
+        
         &__body {
 
             &_main {

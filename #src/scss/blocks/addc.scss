@@ -153,12 +153,18 @@
 @media (max-width: 500px) {
 
     .addc {
-
+        display: flex;
+        align-items: center;
+        background-color: #3C3C3C;
         &__body {
             border-radius: 0;
-
+            max-width: unset;
+            // height: 100%;
+            
             &_in {
-                padding: 50px 10px;
+                // padding: 50px 10px;
+                // height: 100%;
+                width: 100%;
 
             }
 

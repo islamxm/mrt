@@ -8,6 +8,7 @@ export const revsSlider = () => {
         slidesPerView: 4,
         spaceBetween: 15,
         modules: [Navigation],
+        loop: true,
         navigation: {
             prevEl: '.revs__body_thumbs_nav_prev',
             nextEl: '.revs__body_thumbs_nav_next'
@@ -19,6 +20,7 @@ export const revsSlider = () => {
     const mainSlider = new Swiper('.revs__body_slider', {
         slidesPerView: 1,
         spaceBetween: 20,
+        loop: true,
         breakpoints: {
             800: {
                 slidesPerView: 1,
