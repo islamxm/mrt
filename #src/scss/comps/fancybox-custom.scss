@@ -4,6 +4,22 @@
     padding: 30px 50px;
 }
 
+@media (max-width: 550px) {
+    .fancybox__toolbar {
+        padding: 15px;
+
+        .fancybox__button--close {
+            width: 25px !important;
+            height: 25px !important;
+
+            svg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
 .fancybox__toolbar__items.fancybox__toolbar__items--left {
     display: none;
 }
