@@ -15,6 +15,7 @@ import { revsSlider } from './modules/revsSlider.js';
 import { searchFieldToggler } from './modules/searchFieldToggler.js';
 import { sensorDrop } from './modules/sensorDrop.js';
 import { tbsSlider } from './modules/tbsSlider.js';
+import { telMask } from './modules/telMask.js';
 import { up } from './modules/up.js';
 
 
@@ -41,8 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     sensorDrop();
     revsSlider();
     addC();
-
-    
+    telMask();    
 })
 
 
