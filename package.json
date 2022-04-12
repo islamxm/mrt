@@ -47,6 +47,7 @@
   },
   "dependencies": {
     "@fancyapps/ui": "github:fancyapps/ui",
+    "imask": "^6.4.2",
     "nouislider": "^15.5.1",
     "wnumb": "^1.2.0"
   }

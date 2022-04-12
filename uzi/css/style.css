@@ -1723,13 +1723,19 @@ body {
 .tbs__wrap {
   display: flex;
   align-items: center;
+  overflow-x: auto !important;
+  -ms-overflow-style: none;
+}
+.tbs__wrap::-webkit-scrollbar {
+  width: 0;
 }
 .tbs__item {
   font-size: 16px;
   line-height: 16px;
   color: #5C82E4;
   display: block;
-  white-space: nowrap;
+  width: auto !important;
+  margin: 0 15px;
 }
 .tbs__item:first-child {
   margin-left: 0;
@@ -2709,7 +2715,6 @@ body {
 }
 .feed__body_link a {
   font-weight: 700;
-  display: block;
 }
 .feed__img img {
   display: flex;
@@ -3505,7 +3510,7 @@ body {
   display: block;
   margin-bottom: 30px;
   font-size: 25px;
-  line-height: 25px;
+  line-height: 130% !important;
 }
 .prod__rates_list_item:hover {
   color: #FF727A;
@@ -3807,6 +3812,9 @@ body {
   .prod .bc__list {
     padding-bottom: 0;
   }
+  .prod__rates_list_item {
+    font-size: 18px;
+  }
   .prod__main_name {
     margin-bottom: 20px;
   }
@@ -3856,10 +3864,21 @@ body {
   .prod__comment_list_item .action {
     flex-wrap: wrap;
   }
+  .prod__comment_list_item .action__name {
+    font-size: 18px;
+  }
+  .prod__comment_list_item .action__date {
+    font-size: 18px;
+  }
   .prod__comment_list_item .action__btn {
     width: 100%;
     text-align: left;
     margin-top: 13px;
+    font-size: 18px;
+  }
+  .prod__comment_list_item .text {
+    font-size: 18px;
+    line-height: 130%;
   }
   .prod__comment_head {
     margin-bottom: 20px;

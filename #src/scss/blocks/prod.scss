@@ -743,7 +743,8 @@
                 display: block;
                 margin-bottom: 30px;
                 font-size: 25px;
-                line-height: 25px;
+                line-height: 130% !important;
+                
 
                 &:hover {
                     color: $red;
@@ -1285,6 +1286,16 @@
             }
         }
 
+        &__rates {
+
+            &_list {
+
+                &_item {
+                    font-size: 18px;
+                }
+            }
+        }
+
         &__main {
 
             &_name {
@@ -1388,11 +1399,26 @@
                     .action {
                         flex-wrap: wrap;
 
+                        &__name {
+                            font-size: 18px;
+
+                        }
+
+                        &__date {
+                            font-size: 18px;
+                        }
+
                         &__btn {
                             width: 100%;
                             text-align: left;
                             margin-top: 13px;
+                            font-size: 18px;
                         }
+                    }
+
+                    .text {
+                        font-size: 18px;
+                        line-height: 130%;
                     }
                 } 
             }

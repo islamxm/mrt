@@ -7,7 +7,12 @@
     &__wrap {
         display: flex;
         align-items: center;
+        overflow-x: auto !important;
+        -ms-overflow-style: none; 
     }
+
+    &__wrap::-webkit-scrollbar { width: 0; }
+    
 
     &__item {
         // margin: 0 15px;
@@ -15,7 +20,10 @@
         line-height: 16px;
         color: #5C82E4;
         display: block;
-        white-space: nowrap;
+        // white-space: nowrap;
+        width: auto !important;
+        margin: 0 15px;
+        
 
         &:first-child {
             margin-left: 0;

@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     up();
     searchFieldToggler();
     mobmenuToggler();
-    tbsSlider();
+    // tbsSlider();
     cards();
     popSlider();
     qtsSlider();
