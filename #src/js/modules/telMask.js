@@ -1,8 +1,12 @@
 import IMask from "imask";
 
 export const telMask = () => {
+    const inp = document.getElementById('telInput');
 
-    const el = new IMask(document.getElementById('telInput'), {
-        mask: '+{7} (000) 000-00-00'
-    });
+    if(inp) {
+        const el = new IMask(inp, {
+            mask: '+{7} (000) 000-00-00'
+        });
+    }
+    
 };
