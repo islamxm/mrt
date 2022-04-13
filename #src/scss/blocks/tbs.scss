@@ -22,7 +22,7 @@
         display: block;
         // white-space: nowrap;
         width: auto !important;
-        margin: 0 15px;
+        margin: 0 10px;
         
 
         &:first-child {
@@ -52,6 +52,7 @@
 
         &__in {
             padding: 20px 0;
+            padding-bottom: 0;
         }
     }
 }
