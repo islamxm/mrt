@@ -26,7 +26,7 @@
         // height: 294px;
         // width: 100%;
         overflow: hidden;
-        border-radius: 10px 10px 0 0;
+        border-radius: 10px;
         background-color: #fff;
 
         img {
@@ -62,26 +62,66 @@
                     line-height: 18px;
                 }
 
-                &__cnt {
-                    font-size: 18px;
-                    line-height: 18px;
-                    color: $red;
-                }
+                
             }
 
-            .link {
+            // .link {
+            //     display: flex;
+            //     align-items: center;
+                
+            //     div {
+            //         color: $blue;
+            //         @include def-anim;
+            //         font-size: 18px;
+            //         line-height: 18px;
+
+            //         &:hover {
+            //             color: $red;
+            //         }
+            //     }
+            // }
+
+            .ex {
                 display: flex;
                 align-items: center;
-                
-                div {
-                    color: $blue;
-                    @include def-anim;
+                flex-wrap: wrap;
+
+                &__item {
+                    margin: 0 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    &_icon {
+                        width: 25px;
+                        height: 25px;
+                        background-size: contain;
+                        background-position: center;
+                        background-repeat: no-repeat;
+
+                    }
+
+                    &_text {
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 16px;
+                        margin-left: 5px;
+                        color: #C1C1C1;
+                    }
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+
+                &__rate {
+                    color: $purp;
                     font-size: 18px;
                     line-height: 18px;
-
-                    &:hover {
-                        color: $red;
-                    }
                 }
             }
         }
@@ -130,21 +170,13 @@
                 button {
                     width: 100%;
                     padding: 18px;
-                    background-color: $red;
+                    background-color: $purp;
                     color: #fff;
                     font-weight: 700;
                     font-size: 18px;
                     line-height: 18px;
                     cursor: pointer;
                     @include def-anim;
-
-                    &:hover {
-                        background-color: $red-active;
-                    }
-
-                    &:active {
-                        background-color: $red-active;
-                    }
                 }
             }
         }
@@ -252,6 +284,26 @@
 
                     &__cnt {
                         width: 100%;
+                    }
+                }
+
+                .ex {
+                    flex-wrap: wrap;
+
+                    &__rate {
+                        width: 100%;
+                        margin: 0;
+                        margin-bottom: 5px;
+                        justify-content: flex-start;
+                    }
+
+                    &__item {
+                        margin-right: 20px;
+                        margin-left: 0;
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
                     }
                 }
             }

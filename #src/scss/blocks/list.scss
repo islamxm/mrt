@@ -3,7 +3,7 @@
     &__in {
         display: flex;
         align-items: flex-start;
-        padding: 0 0 40px 0;
+        padding: 80px 0;
     }
 
     &__body {
@@ -36,40 +36,42 @@
             }
         }
 
-        &_items {
+        &_filter {
             display: flex;
-            margin-right: -1%;
+            align-items: center;
+            margin-bottom: 40px;
             flex-wrap: wrap;
-            margin-bottom: 50px;
+
+            &_name {
+                margin-right: 30px;
+                margin-bottom: 15px;
+            }
 
             &_item {
-                width: calc(100% / 3.2);
-                margin-right: 1.7%;
-                margin-bottom: 1%;
+                margin-right: 20px;
+                margin-bottom: 15px;
+            }
+        }
+
+        &_items {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+            margin-left: -10px;
+            margin-right: -10px;
+
+            &_item {
+                width: calc((100% / 3) - 20px);
+                margin: 0 10px;
+                margin-bottom: 20px;
             }
         }
 
         &_action {
-
             display: flex;
             align-items: center;
             justify-content: center;
 
-            button {
-                border: 1px solid $blue;
-                color: $blue;
-                padding: 12px 57px;
-                border-radius: 5px;
-                font-size: 16px;
-                line-height: 16px;
-                @include def-anim;
-                cursor: pointer;
-
-                &:hover {
-                    background-color: $blue;
-                    color: #fff;
-                }
-            }
         }
     }
 }
@@ -80,11 +82,10 @@
     .list {
 
         &__in {
-
+            padding: 50px 0;
         }
 
         &__body {
-            margin-left: 0;
 
             &_head {
 
@@ -92,69 +93,38 @@
                     display: block;
                 }
             }
+
+            margin-left: 0;
+            &_items {
+
+                &_item {
+                    margin: 0 10px;
+                    margin-bottom: 20px;
+                    width: calc((100% / 2) - 20px);
+                }
+            }
         }
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 650px) {
 
     .list {
 
-        
+        &__in {
+            padding: 20px 0;
+        }
 
         &__body {
 
-            &_items {
-                justify-content: space-between;
-                margin-right: 0;
-
-                &_item {
-                    width: 49%;
-                    margin-right: 0;
-                }
-            }
-
-            &_head {
-                &_btn {
-                    font-size: 16px;
-                    line-height: 16px;
-                    padding-right: 35px;
-    
-                    &:after {
-                        content: url('../img/icons/filter-mob.svg');
-                        top: calc(50% - 10px);
-                    }
+            &_filter {
+                margin-bottom: 30px;
+                &_name {
+                    font-size: 18px;
+                    line-height: 18px;
                 }
             }
         }
     }
 }
 
-
-@media (max-width: 400px) {
-
-    .list {
-
-        &__body {
-
-            &_head {
-                flex-wrap: wrap;
-                &_title {
-                    width: 100%;
-                    margin-bottom: 12px;
-                }
-
-                
-            }
-            &_items {
-                justify-content: space-between;
-                margin-right: 0;
-
-                &_item {
-                    // width: 100%;
-                    // margin-right: 0;
-                }
-            }
-        }
-    }
-}

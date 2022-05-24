@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- STYLES -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    <link rel="stylesheet" href="css/style.min.css">
+    
+    <!-- SCRIPTS -->
+    <script defer src="js/app.min.js"></script>
+    
+    <title>Document</title>
+</head>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+    <div class="container">
+        <div class="header__in">
+            <div class="header__top">
+                
+                <a href="#" class="header__logo">
+                    <picture>
+                        <source srcset="" type="image/webp">
+                        <img src="./img/header/logo.png">
+                    </picture>
+                </a>
+                
+                <div class="header__text">
+                    Портал про мрт аппараты <br>
+                    текст заменяется
+                </div>
+                <div class="header__search" id="searchFeild">
+                    <input type="text" placeholder="Я ищу...">
+                    <button>
+                        Найти
+                    </button>
+
+                    <div class="close" id="searchFieldClose">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="1.9206" height="19.206" rx="0.960302" transform="matrix(0.710018 0.704183 -0.710018 0.704183 13.6367 0)" fill="#2F2F2F"/>
+                            <rect width="1.9206" height="19.206" rx="0.960302" transform="matrix(0.710018 -0.704183 0.710018 0.704183 0 1.47559)" fill="#2F2F2F"/>
+                            </svg>
+                    </div>
+                    
+                </div>
+                
+                <button class="header__burger" id="mobmenuTrigger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <button class="header__sr" id="searchFieldToggler">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.96875 17.1875C13.9556 17.1875 17.1875 13.9556 17.1875 9.96875C17.1875 5.98194 13.9556 2.75 9.96875 2.75C5.98194 2.75 2.75 5.98194 2.75 9.96875C2.75 13.9556 5.98194 17.1875 9.96875 17.1875Z" stroke="#7C4BE2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15.0732 15.0732L19.2499 19.2499" stroke="#7C4BE2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        
+                </button>
+            </div>
+            <div class="header__bottom">
+                <div class="header__left">
+                    <ul class="header__nav">
+                        <li class="header__nav_item"><a href="#">МРТ аппараты</a></li>
+                        <li class="header__nav_item"><a href="#">Рейтинги</a></li>
+                        <li class="header__nav_item"><a href="#">Статьи</a></li>
+                        <li class="header__nav_item"><a href="#">Производители</a></li>
+                        <li class="header__nav_item"><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="header__right">
+                    <div class="header__link">
+                        <a href="tel:+74958312222" class="header__link_value">+7 (495) 831-22 -22</a>
+                    </div>
+                    <div class="header__link">
+                        <a href="mailto:siteadressmail@mail.ru" class="header__link_value">siteadressmail@mail.ru</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <main class="main">
+            <section class="prod">
+                <div class="container">
+                    <div class="prod__in">
+                        <div class="bc">
+    <div class="bc__list">
+        <a href="#" class="bc__item">Раздел 1</a>
+        <a href="#" class="bc__item">Раздел 2</a>
+    </div>
+</div>
+                        <div class="rtg">
+                            <div class="container">
+                                <div class="rtg__in">
+                                    <h2 class="rtg__title section__title">Топ 15 Лучших УзИ аппаратов</h2>
+                                    <div class="rtg__info">
+                                        <div class="rtg__info_item">
+                                            <div class="rtg__info_item_icon" style="background-image: url('./img/icons/seen.svg');"></div>
+                                            <div class="rtg__info_item_text">834</div>
+                                        </div>
+                                        <div class="rtg__info_item">
+                                            <div class="rtg__info_item_icon" style="background-image: url('./img/icons/revs.svg');"></div>
+                                            <div class="rtg__info_item_text">12</div>
+                                        </div>
+                                    </div>
+                                    <div class="rtg__body">
+                                        <picture>
+                                            <source srcset="" type="image/webp">
+                                            <img src="./img/rtg.png" width="743" height="702" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                        <div class="prod__descr">
+
+                            <div class="prod__descr_item active" id="descripton">
+                                <div class="prod__descr_item_head">
+                                    <h3 class="prod__descr_item_head_title">Таб 1</h3>
+                                    <button class="prod__descr_item_head_btn">Скрыть</button>
+                                </div>
+                                <div class="prod__descr_item_body">
+                                    <div class="text">
+                                        Превосходная универсальность, гибкая организация рабочего процесса и стабильно высокое качество изображения УЗИ сканера Xario 200 помогут справиться с клиническими задачами любой сложности. В систему Toshiba Xario входит комплексный пакет клинически проверенных программ, обеспечивающих великолепное качество изображений и высокое разрешение для самых разных областей применения. Широкий ассортимент технологий для визуализации и количественного анализа позволяет принимать максимально обоснованные решения о тактике лечения заболеваний.
+                                    </div>
+
+                                    <div class="video">
+                                        <iframe width="1097" height="617" src="https://www.youtube.com/embed/Az4d7jlN6wo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="prod__descr_item active" id="innovation">
+                                        <div class="prod__descr_item_head">
+                                            <h3 class="prod__descr_item_head_title">Инновационные технологии</h3>
+                                            
+                                        </div>
+                                        <div class="prod__descr_item_body">
+                                            <div class="ex">
+                                                <div class="ex__list">
+                                                    <div class="ex__list_item">
+                                                        <span>Улучшенный динамический поток ADF</span> – обеспечивает высочайшее пространственное разрешение в режиме цветового доплеровского картирования, позволяя с непревзойдённой точностью и детализацией выявлять самые мелкие сосуды и зоны со сложным характером кровотока.
+                                                    </div>
+                                                    <div class="ex__list_item">
+                                                        <span>Дифференциальная тканевая гармоника D-THI </span> — решает проблему визуализации «сложных» пациентов благодаря глубокому «распознаванию» тканей.
+                                                    </div>
+                                                    <div class="ex__list_item">
+                                                        <span>ApliPure</span> - технология, сочетающая преимущества пространственного и частотного кодирования и обеспечивающая высокую однородность изображения с сохранением клинически важных маркёров. АрliPure+ – повышает латеральную разрешающую способность и контрастность, автоматически распознает и удаляет шумы и уменьшает количество артефактов.
+                                                    </div>
+                                                    <div class="ex__list_item">
+                                                        <span>Superb Microvascular Imaging SMI</span> — это уникальный метод визуализации микрососудистого русла, основанный на допплеровском эффекте. Эта программная опция позволяет эффективно отделять компоненты кровотока от наложенных на них артефактов движения окружающих тканей, сохраняя информацию о кровотоке даже с самыми малыми скоростями при беспрецедентной чёткости и детализации.
+                                                    </div>
+                                                    <div class="ex__list_item">
+                                                        <span>Luminance</span> — режим трехмерной поверхностной реконструкции для максимально реалистичной визуализации плода при отображении глубины теней и деталей.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod__descr_item active" id="characteristics">
+                                        <div class="prod__descr_item_head">
+                                            <h3 class="prod__descr_item_head_title">Характеристики</h3>
+                                            
+                                        </div>
+                                        <div class="prod__descr_item_body">
+                                            <div class="char">
+                                                <div class="char__list">
+                                                    <div class="char__list_item">
+                                                        <div class="name">Монитор</div>
+                                                        <div class="value">19"</div>
+                                                    </div>
+                                                    <div class="char__list_item">
+                                                        <div class="name">Сенсорная панель управления</div>
+                                                        <div class="value">10,4"</div>
+                                                    </div>
+                                                    <div class="char__list_item">
+                                                        <div class="name">Вес</div>
+                                                        <div class="value">75 кг</div>
+                                                    </div>
+                                                    <div class="char__list_item">
+                                                        <div class="name">Активные порты</div>
+                                                        <div class="value">3</div>
+                                                    </div>
+                                                    <div class="char__list_item">
+                                                        <div class="name">Встроенный Wi-Fi</div>
+                                                        <div class="value">Да</div>
+                                                    </div>
+                                                    <div class="char__list_item">
+                                                        <div class="name">Максимальная глубина сканирования</div>
+                                                        <div class="value">40 см</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                                
+                                
+                                
+                            </div>
+
+                            
+
+
+                            
+
+                        </div>
+                        <section class="feed">
+                            <div class="container">
+                                <div class="feed__in">
+                                    <div class="feed__body">
+                                        <div class="feed__body_img">
+                                            <picture>
+                                                <source srcset="" type="image/webp">
+                                                <img src="./img/feed/feed.png" alt="">
+                                            </picture>
+                                        </div>
+                                        <div class="feed__body_content">
+                                            <div class="feed__body_content_descr">
+                                                <h3 class="feed__body_content_descr_title">Как правильно выбрать аппарат?</h3>
+                                                <div class="feed__body_content_descr_text">
+                                                    Получите подробную, бесплатную консультацию от наших специалистов
+                                                </div>
+                                            </div>
+                                            <form class="feed__body_content_form">
+                                                <input type="tel" placeholder="+7 (495) 555 55 55">
+                                                <button>Получить консультацию</button>
+                                                <div class="feed__body_content_form_ex">
+                                                    <a href="#">при нажатии на кнопку вы соглашаетесь с</a> полтикой конфиденциальности
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <div class="prod__descr">
+                            <section class="rts">
+                                <div class="container">
+                                    <div class="rts__in">
+                                        <div class="rts__head">
+                                            <h2 class="rts__head_title section__title">
+                                                Читайте другие статьи
+                                            </h2>
+                                        </div>
+                                        <div class="rts__body">
+                                            <div class="rts__body_item">
+                                                <div class="rts__body_item_img">
+                                                    <picture>
+                                                        <source srcset="" type="image/webp">
+                                                        <img width="198" height="188" src="./img/card/card.png" alt="">
+                                                    </picture>
+                                                </div>
+                                                <div class="rts__body_item_content">
+                                                    <div class="rts__body_item_content_info">
+                                                        <div class="rts__body_item_content_info_item">
+                                                            <div class="rts__body_item_content_info_item_icon" style="background-image: url('./img/icons/seen.svg');"></div>
+                                                            <div class="rts__body_item_content_info_item_value">834</div>
+                                                        </div>
+                                                        <div class="rts__body_item_content_info_item">
+                                                            <div class="rts__body_item_content_info_item_icon" style="background-image: url('./img/icons/revs.svg');"></div>
+                                                            <div class="rts__body_item_content_info_item_value">12</div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="rts__body_item_content_title">
+                                                        Также как экономическая повестка.
+                                                    </a>
+                                                    <div class="rts__body_item_content_text">
+                                                        В своём стремлении улучшить пользовательский опыт мы упускаем, что предприниматели в сети интернет обнародованы. Но ключевые особенности структуры проекта призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но сторонники тоталитаризма в науке будут...
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="rts__body_item">
+                                                <div class="rts__body_item_img">
+                                                    <picture>
+                                                        <source srcset="" type="image/webp">
+                                                        <img width="198" height="188" src="./img/card/card.png" alt="">
+                                                    </picture>
+                                                </div>
+                                                <div class="rts__body_item_content">
+                                                    <div class="rts__body_item_content_info">
+                                                        <div class="rts__body_item_content_info_item">
+                                                            <div class="rts__body_item_content_info_item_icon" style="background-image: url('./img/icons/seen.svg');"></div>
+                                                            <div class="rts__body_item_content_info_item_value">834</div>
+                                                        </div>
+                                                        <div class="rts__body_item_content_info_item">
+                                                            <div class="rts__body_item_content_info_item_icon" style="background-image: url('./img/icons/revs.svg');"></div>
+                                                            <div class="rts__body_item_content_info_item_value">12</div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="rts__body_item_content_title">
+                                                        Также как экономическая повестка.
+                                                    </a>
+                                                    <div class="rts__body_item_content_text">
+                                                        В своём стремлении улучшить пользовательский опыт мы упускаем, что предприниматели в сети интернет обнародованы. Но ключевые особенности структуры проекта призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но сторонники тоталитаризма в науке будут...
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="rts__body_item">
+                                                <div class="rts__body_item_img">
+                                                    <picture>
+                                                        <source srcset="" type="image/webp">
+                                                        <img width="198" height="188" src="./img/card/card.png" alt="">
+                                                    </picture>
+                                                </div>
+                                                <div class="rts__body_item_content">
+                                                    <div class="rts__body_item_content_info">
+                                                        <div class="rts__body_item_content_info_item">
+                                                            <div class="rts__body_item_content_info_item_icon" style="background-image: url('./img/icons/seen.svg');"></div>
+                                                            <div class="rts__body_item_content_info_item_value">834</div>
+                                                        </div>
+                                                        <div class="rts__body_item_content_info_item">
+                                                            <div class="rts__body_item_content_info_item_icon" style="background-image: url('./img/icons/revs.svg');"></div>
+                                                            <div class="rts__body_item_content_info_item_value">12</div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="rts__body_item_content_title">
+                                                        Также как экономическая повестка.
+                                                    </a>
+                                                    <div class="rts__body_item_content_text">
+                                                        В своём стремлении улучшить пользовательский опыт мы упускаем, что предприниматели в сети интернет обнародованы. Но ключевые особенности структуры проекта призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но сторонники тоталитаризма в науке будут...
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rts__action">
+                                            <a href="#" class="rts__action_link">
+                                                <div class="rts__action_link_text">
+                                                    Смотреть все
+                                                </div>
+                                                <div class="rts__action_link_icon"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <div class="prod__comment">
+                                <div class="prod__comment_head">
+                                    Написать комментарий
+                                </div>
+
+                                <div class="prod__comment_body">
+                                    <div class="prod__comment_body_h">
+                                        Написать с помощью +
+                                    </div>
+                                    <div class="prod__comment_body_inp">
+                                        <input type="text" placeholder="Имя">
+                                    </div>
+                                    <div class="prod__comment_body_inp">
+                                        <input type="email" placeholder="Email">
+                                        <div class="prod__comment_body_inp_ex">*Email будет скрыт </div>
+                                    </div>
+                                    <div class="prod__comment_body_text">
+                                        <textarea placeholder="Комментарий..."></textarea>
+                                    </div>
+                                    <div class="prod__comment_body_action">
+                                        <button class="prod__comment_body_action_btn">Отправить</button>
+                                    </div>
+                                </div>
+
+                                <div class="prod__comment_list">
+                                    <div class="prod__comment_list_head">
+                                        Комментарии <span>(3)</span>
+                                    </div>
+                                    <div class="prod__comment_list_item">
+                                        <div class="text">
+                                            Господа, существующая теория требует определения и уточнения переосмысления внешнеэкономических политик. Идейные соображения высшего порядка, а также повышение уровня гражданского сознания влечет за собой процесс внедрения и модернизации экономической целесообразности принимаемых решений. Предварительные выводы неутешительны: высокотехнологичная концепция общественного уклада выявляет срочную потребность новых предложений.
+                                        </div>
+                                        <div class="action">
+                                            <div class="action__name">Татьяна</div>
+                                            <div class="action__date">22.11.2021</div>
+                                            <button class="action__btn comment-answer-btn">Ответить</button>
+                                        </div>
+                                    </div>
+                                    <div class="prod__comment_list_item answer">
+                                        <div class="text">
+                                            Господа, существующая теория требует определения и уточнения переосмысления внешнеэкономических политик. Идейные соображения высшего порядка, а также повышение уровня гражданского сознания влечет за собой процесс внедрения и модернизации экономической целесообразности принимаемых решений. Предварительные выводы неутешительны: высокотехнологичная концепция общественного уклада выявляет срочную потребность новых предложений.
+                                        </div>
+                                        <div class="action">
+                                            <div class="action__name">Татьяна</div>
+                                            <div class="action__date">22.11.2021</div>
+                                            <button class="action__btn comment-answer-btn">Ответить</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+    <div class="footer__main">
+        <div class="container">
+            <div class="footer__main_in">
+                
+                <div class="footer__main_body">
+                    <div class="footer__main_body_item">
+                       
+                        <div class="item">
+                            <div class="footer__logo">
+                                <picture>
+                                    <source srcset="" type="image/webp">
+                                    <img src="" alt="logo">
+                                </picture>
+                            </div>
+                            <div class="item__text">
+                                Портал про мрт аппараты текст заменяется
+                            </div>
+                            <div class="item__list">
+                                <a href="#" class="item__list_item">Политика конфиденциальности</a>
+                                <a href="#" class="item__list_item">Карта сайта</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__main_body_item">
+                        <div class="item">
+                            <h3 class="item__head">
+                                Рейтинги
+                            </h3>
+                            <div class="item__list">
+                                <a href="#" class="item__list_item">Лучшие УЗИ аппараты</a>
+                                <a href="#" class="item__list_item">Топ 15 УЗИ аппаратов 2022</a>
+                                <a href="#" class="item__list_item">Лишь интерактивные прототипы рассмотрены исключительно в разрезе.</a>
+                                <a href="#" class="item__list_item">В целом, конечно, курс на социально-ориентированный</a>
+                                <a href="#" class="item__list_item">Топ 15 УЗИ аппаратов 2022</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__main_body_item">
+                        <div class="item">
+                            <h3 class="item__head">
+                                Лучшие производители
+                            </h3>
+                            <div class="item__list">
+                                <a href="#" class="item__list_item">Samsung Medicine</a>
+                                <a href="#" class="item__list_item">Hitachi</a>
+                                <a href="#" class="item__list_item">Canon</a>
+                                <a href="#" class="item__list_item">Mindray</a>
+                                <a href="#" class="item__list_item">Ge</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__main_body_item">
+                        <div class="item">
+                            <h3 class="item__head">
+                                Лучшие аппараты
+                            </h3>
+                            <div class="item__list">
+                                <a href="#" class="item__list_item">Samsung GL 315</a>
+                                <a href="#" class="item__list_item">Hitachi Hers 502 </a>
+                                <a href="#" class="item__list_item">Samsung GE 156</a>
+                                <a href="#" class="item__list_item">Mindray Sound 549 GE</a>
+                                <a href="#" class="item__list_item">Canon 618</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bot">
+        <div class="container">
+            <div class="footer__bot_in">
+                © mrtsuper.ru Все права защищены
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+    
+<!-- Моибльное меню -->
+<div class="mobmenu">
+    <div class="mobmenu__in">
+        <div class="mobmenu__head">
+            <h3 class="mobmenu__head_title">
+                Меню
+            </h3>
+            <button class="mobmenu__head_close" id="mobmenuClose">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.741953 0.757274C-0.247318 1.76697 -0.247318 3.40402 0.741953 4.41372L8.95856 12.8L1.32979 20.5863C0.340522 21.596 0.340523 23.233 1.32979 24.2427C2.31906 25.2524 3.92299 25.2524 4.91226 24.2427L12.541 16.4564L20.0873 24.1585C21.0765 25.1682 22.6805 25.1682 23.6697 24.1585C24.659 23.1488 24.659 21.5118 23.6697 20.5021L16.1235 12.8L24.2576 4.49793C25.2468 3.48824 25.2468 1.85119 24.2576 0.841491C23.2683 -0.168207 21.6644 -0.168207 20.6751 0.841491L12.541 9.14355L4.32442 0.757274C3.33515 -0.252425 1.73122 -0.252424 0.741953 0.757274Z" fill="#2F2F2F"/>
+                    </svg>
+                    
+            </button>
+        </div>
+        <ul class="mobmenu__list">
+            
+            <li class="mobmenu__item"><a href="#">УЗИ аппараты</a></li>
+            <li class="mobmenu__item"><a href="#">Датчики</a></li>
+            <li class="mobmenu__item"><a href="#">Рейтинги</a></li>
+            <li class="mobmenu__item"><a href="#">Статьи</a></li>
+            <li class="mobmenu__item"><a href="#">Производители</a></li>
+            <li class="mobmenu__item"><a href="#">Контакты</a></li>
+        </ul>
+        <div class="mobmenu__links">
+            <div class="mobmenu__links_item">
+                <div class="name">телефон</div>
+                <a href="tel:+74958312222" class="value">+7 (495) 831-22 -22</a>
+            </div>
+            <div class="mobmenu__links_item">
+                <div class="name">email</div>
+                <a href="mailto:siteadressmail@mail.ru" class="value">siteadressmail@mail.ru</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Модалка для добавления компании -->
+</body>
+</html>

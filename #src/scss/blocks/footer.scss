@@ -1,10 +1,17 @@
 .footer {
+    background-color: #212121;
 
+    &__logo {
+        background-color: $purp;
+        width: 199px;
+        height: 70px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
     &__main {
-        border-top: 2px solid #C4C4C4;
         
         &_in {
-            padding: 30px 0 60px 0;
+            padding: 50px 0 30px 0;
         }
 
         &_top {
@@ -42,11 +49,19 @@
                 .item {
                     margin-bottom: 40px;
 
+                    &__text {
+                        font-size: 16px;
+                        line-height: 130%;
+                        color: #fff;
+                        margin-bottom: 30px;
+                    }
+
                     &__head {
                         font-weight: 700;
                         font-size: 18px;
                         line-height: 18px;
                         margin-bottom: 20px;
+                        color:#fff;
                     }
 
                     &__list {
@@ -60,7 +75,7 @@
                             @include def-anim;
 
                             &:hover {
-                                color: $blue;
+                                color: $purp;
                             }
 
                             span {
@@ -75,14 +90,14 @@
 
 
     &__bot {
-        background-color: $text;
+        
 
         &_in {
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 20px 0;
-            color: #969696;
+            color: #fff;
             font-weight: 400;
             font-size: 16px;
             line-height: 22px;
@@ -94,60 +109,63 @@
 @media (max-width: 1000px) {
 
     .footer {
-        
-        &__main {
 
+        &__main {
+            
             &_in {
-                padding: 35px 100px 50px 100px;
+                display: flex;
+                justify-content: center;
             }
 
             &_body {
+                width: 70%;
                 flex-wrap: wrap;
-                
-                &_item {
-                    width: 48%;
 
-                    .item {
-                        margin-bottom: 20px;
+                &_item {
+                    &:nth-child(1) {
+                        width: 100%;
                     }
 
-                    &:nth-child(1) {
-                        order: 1;
-                    }   
-
                     &:nth-child(2) {
-                        order: 3;
+                        width: 100%;
                     }
 
                     &:nth-child(3) {
-                        order: 2;
-                    } 
+                        width: 48%;
+                    }
 
                     &:nth-child(4) {
-                        order: 4;
+                        width: 48%;
+                    }
+
+                    .item {
+                        margin-bottom: 35px;
                     }
                 }
             }
+            
         }
     }
 }
 
+@media (max-width: 650px) {
 
-@media (max-width: 720px) {
     .footer {
 
         &__main {
 
             &_in {
-                padding: 30px 0;
+                padding: 40px 0 10px 0;
             }
 
             &_body {
+                width: 100%;
 
                 &_item {
-                    width: 100%;
+                    width: 100% !important;
                 }
             }
         }
     }
 }
+

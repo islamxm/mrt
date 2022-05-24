@@ -133,7 +133,7 @@
                 justify-content: center;
                 font-size: 18px;
                 line-height: 23px;
-                background-color: $red;
+                background-color: $purp;
                 color: #fff;
                 border-radius: 10px;
                 font-weight: 700;
@@ -141,9 +141,7 @@
                 @include def-anim;
                 cursor: pointer;
 
-                &:hover {
-                    background-color: $red-active;
-                }
+                
             }
         }
     }

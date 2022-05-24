@@ -11,18 +11,17 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
-        margin-right: -1%;
+        margin-left: -5px;
+        margin-right: -5px;
+        margin-bottom: 35px;
+
     }
 
     &__item {
-        width: calc(100% / 4.2);
-        margin-right: 1%;
+        margin: 0 10px;
+        width: calc((100% / 4) - 20px);
 
-        .card__img {
-            img {
-                
-            }
-        }
+        
     }
 
     &__action {
@@ -30,64 +29,71 @@
         align-items: center;
         justify-content: center;
 
-        button {
-            border-radius: 5px;
-            border: 1px solid $blue;
-            color: $blue;
-            font-size: 16px;
-            line-height: 16px;
-            cursor: pointer;
-            padding: 12px 57px;
-
-            @include def-anim;
-
-            &:hover {
-                background-color: $blue;
-                color: #fff;
+        &_btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &_text {
+                font-size: 22px;
+                line-height: 22px;
+                color: $purp;
+                margin-right: 10px;
             }
 
+            &_icon {
+                background-image: url('../img/icons/link-arrow.svg');
+                transform: rotate(90deg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                width: 22px;
+                height: 22px;
+            }
         }
     }
 }
 
-@media (max-width: 1160px) {
+
+@media (max-width: 1000px) {
 
     .apr {
 
-        &__list {
-            justify-content: space-between;
-            margin-right: 0;
+        &__in {
+
         }
-
-        &__item {
-            width: 49%;
-            margin-right: 0;
-        }
-    }
-}
-
-@media (max-width: 500px) {
-
-    .apr {
 
         &__title {
-            margin-bottom: 20px;
+
+        }
+
+        &__list {
+
         }
 
         &__item {
-            width: 49%;
+            width: calc((100% / 3) - 20px);
         }
-        
     }
 }
 
-
-@media (max-width: 450px) {
+@media (max-width: 650px) {
 
     .apr {
 
+        &__in {
+            padding: 25px 0;
+        }
+
+        &__list {
+            margin-right: -5px;
+            margin-left: -5px;
+        }
+
         &__item {
-            // width: 100%;
+            width: calc((100% / 2) - 10px);
+            margin: 0 5px;
+            margin-bottom: 20px;
         }
     }
 }
+

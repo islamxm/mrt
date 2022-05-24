@@ -4,16 +4,13 @@
     &:hover {
 
         .art__body_name {
-            color: $red;
+            color: $purp;
         }
     }
     
     &__img {
-        height: 294px;
-        width: 100%;
-        width: 100%;
         overflow: hidden;
-        border-radius: 10px 10px 0 0;
+        border-radius: 10px;
 
         img {
             width: 100%;
@@ -23,7 +20,7 @@
     }
 
     &__body {
-        padding: 15px 0;
+        padding: 10px 0;
 
         &_name {
             font-size: 22px;
@@ -40,38 +37,36 @@
             align-items: center;
 
             &_item {
-                margin-right: 15px;
-                position: relative;
-                padding-left: 30px;
-                color: #969696;
-                font-size: 20px;
-                line-height: 26px;
+                margin: 0 10px;
+                display: flex;
+                align-items: center;
+
+                &:first-child {
+                    margin-left: 0;
+                }
 
                 &:last-child {
                     margin-right: 0;
                 }
 
-                &:after {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    
+                &_icon {
+                    width: 25px;
+                    height: 25px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    margin-right: 5px;
+                }
+
+                &_value {
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 16px;
+                    color: #C1C1C1;
                 }
             }
 
-            &_item.art__body_info_item-rep {
-
-                &:after {
-                    content: url('../img/icons/cmt.svg');
-                }
-            }
-
-            &_item.art__body_info_item-sn {
-
-                &:after {
-                    content: url('../img/icons/sn.svg');
-                }
-            }
+            
         }
     }
 }
@@ -81,7 +76,7 @@
     .art {
 
         &__img {
-            height: 210px;
+            // height: 210px;
         }
     }
 }
@@ -92,9 +87,9 @@
         
 
         &__img {
-            border-radius: 10px; 
-            overflow: hidden;
-            height: 286px;
+            // border-radius: 10px; 
+            // overflow: hidden;
+            // height: 286px;
         }
     }
 }
@@ -106,7 +101,7 @@
     .art {
         
         &__img {
-            height: 136px;
+            // height: 136px;
         }
 
         &__body {

@@ -1,6 +1,6 @@
 export const addC = () => {
     const menu = document.querySelector('.addc');
-    const openBtn = document.querySelector('.pop__head_add');
+    const openBtn = document.querySelector('.bv__action_btn');
     const closeBtn = document.querySelector('.addc__body_close');
 
     if(openBtn) {

@@ -19,6 +19,9 @@ import { telMask } from './modules/telMask.js';
 import { up } from './modules/up.js';
 
 
+import {heroSlider} from './modules/heroSlider.js';
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
     flsFuncs.isWebp();
@@ -42,7 +45,12 @@ document.addEventListener('DOMContentLoaded', () => {
     sensorDrop();
     revsSlider();
     addC();
-    telMask();    
+    telMask(); 
+    
+    
+
+
+    heroSlider();
 })
 
 

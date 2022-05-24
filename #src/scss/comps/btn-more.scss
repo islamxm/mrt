@@ -1,0 +1,42 @@
+.btn-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &__text {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 22px;
+        color: $purp;
+        margin-right: 10px;
+    }
+
+    &__icon {
+        background-image: url('../img/icons/link-arrow.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 22px;
+        height: 22px;
+        transform: rotate(90deg);
+    }
+}
+
+@media (max-width: 650px) {
+
+    .btn-more {
+
+        &__text {
+            font-size: 18px;
+            line-height: 18px;
+        }
+
+        &__icon {
+            width: 25px;
+            height: 25px;
+            background-size: 20px 20px;
+        }
+    }
+}
+

@@ -18,7 +18,7 @@ export const prodSlider = () => {
         breakpoints: {
 
             1000: {
-                slidesPerView: 5,
+                slidesPerView: 4,
                 spaceBetween: 20,
                 direction: 'vertical',
             },

@@ -10,9 +10,12 @@ export const qtsSlider = () => {
             nextEl: '.qts__next'
         },
         breakpoints: {
-
+            1000: {
+                slidesPerView: 2,
+            },
             578: {
                 spaceBetween: 24,
+                slidesPerView:1,
             }
         }
     })

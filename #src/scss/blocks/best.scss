@@ -2,98 +2,38 @@
 
     &__in {
         padding: 50px 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
+        
     }
 
-    &__title {
-        display: none;
+    &__head {
+        margin-bottom: 40px;
     }
 
-    &__content {
-        max-width: 300px;
-        width: 100%;
-
-        &_title {
-            margin-bottom: 20px;
-        }
-
-        &_action {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-
-            a {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding: 10px;
-                border-radius: 5px;
-                border: 1px solid $red;
-                @include def-anim;
-                color: $red;
-                font-size: 16px;
-                line-height: 21px;
-
-                &:hover {
-                    background-color: $red;
-                    color: #fff;
-                }
-
-                &:active {
-                    color: #fff;
-                    background-color: $red-active;
-                    border-color: $red-active;
-                }
-            }
-        }
-    }
+   
     
     &__list {
         display: flex;
-        align-items: flex-start; 
-        justify-content: space-between;
         width: 100%;
         flex-wrap: wrap;
+        margin-left: -10px;
+        margin-right: -10px;
     }
 
     &__item {
-        
-        
-    }
-
-    &__item.card {
-        width: calc(100% / 3.1);
+        width: calc((100% / 3) - 20px);
+        margin: 0 10px;
+        margin-bottom: 20px;
     }
 }
 
-@media (max-width: 1200px) {
-
+@media (max-width: 1000px) {
     .best {
 
         &__in {
-            flex-wrap: wrap;
-        }
-
-        &__title {
-            margin-bottom: 40px;
-            display: block;
 
         }
 
-        &__content {
-            order: 1;
-            width: 100%;
-            max-width: unset;
-
-            &_title {
-                display: none;
-            }
-
-            &_action {
-                justify-content: center;
-            }
+        &__head {
 
         }
 
@@ -102,7 +42,7 @@
         }
 
         &__item {
-            
+            width: calc((100% / 2) - 20px);
         }
     }
 }
@@ -111,14 +51,15 @@
 
     .best {
 
-        &__list {
-            flex-wrap: wrap;
+        &__in {
+            padding: 25px 0;
         }
-
+        
+        &__head {
+            margin-bottom: 30px;
+        }
         &__item {
-            // width: 100% !important;
-            width: 100% !important;
-            
+            width: calc(100% - 20px);
         }
     }
 }

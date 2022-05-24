@@ -8,8 +8,6 @@
 
         <main class="main">
 
-            @@include('./html/tbs.html')
-
             <section class="list">
 
                 <div class="container">
@@ -24,175 +22,45 @@
                             @@include('./html/bc.html')
 
                             <div class="list__body_head">
-                                <h2 class="list__body_head_title normal__title">УЗИ аппараты</h2>
+                                <h2 class="list__body_head_title normal__title">МРТ аппараты</h2>
                                 <button class="list__body_head_btn">
-                                    Фильтр
+                                    
                                 </button>
                             </div>
+                            <div class="list__body_filter">
+                                <div class="list__body_filter_name">сортировать по:</div>
+                                <div class="list__body_filter_item btn-more">
+                                    <div class="btn-more__text">цене</div>
+                                    <div class="btn-more__icon"></div>
+                                </div>
+                                <div class="list__body_filter_item btn-more">
+                                    <div class="btn-more__text">популярности</div>
+                                    <div class="btn-more__icon"></div>
+                                </div>
+                                <div class="list__body_filter_item btn-more">
+                                    <div class="btn-more__text">по рейтингу</div>
+                                    <div class="btn-more__icon"></div>
+                                </div>
+                            </div>
                             <div class="list__body_items">
-                                <a href="#" class="list__body_items_item card">
-                                    <div class="card__img">
-                                        <picture>
-                                            <source srcset="" type="image/webp">
-                                            <img src="./img/apr/apr.png" alt="">
-                                        </picture>
-                                    </div>
-                                    <div class="card__body">
-                                        <div class="card__body_main">
-                                            <div class="name">Philips SE 310</div>
-                                            <div class="values">
-                                                <div class="values__price">
-                                                    от 2 800 000 ₽
-                                                </div>
-                                                <div class="values__cnt">
-                                                    9/10
-                                                </div>
-                                            </div>
-                                            <div class="link">
-                                                <div>Подробнее</div>
-                                            </div>
-                                        </div>
-                                        <div class="card__body_ex">
-                                            <div class="head">
-                                                В категориях
-                                            </div>
-                                            <ul class="list">
-                                                <li class="list__item">— для сердца и сосудов</li>
-                                                <li class="list__item">— для геникологии и акушерства</li>
-                                                <li class="list__item">— 3d/4d аппараты</li>
-                                            </ul>
-                                            <div class="action">
-                                                <button>
-                                                    Консультация в один клик
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
+                                <a href="#" class="list__body_items_item">
+                                    @@include('./html/card.html')
                                 </a>
-                                <a href="#" class="list__body_items_item card">
-                                    <div class="card__img">
-                                        <picture>
-                                            <source srcset="" type="image/webp">
-                                            <img src="./img/apr/apr.png" alt="">
-                                        </picture>
-                                    </div>
-                                    <div class="card__body">
-                                        <div class="card__body_main">
-                                            <div class="name">Philips SE 310</div>
-                                            <div class="values">
-                                                <div class="values__price">
-                                                    от 2 800 000 ₽
-                                                </div>
-                                                <div class="values__cnt">
-                                                    9/10
-                                                </div>
-                                            </div>
-                                            <div class="link">
-                                                <div>Подробнее</div>
-                                            </div>
-                                        </div>
-                                        <div class="card__body_ex">
-                                            <div class="head">
-                                                В категориях
-                                            </div>
-                                            <ul class="list">
-                                                <li class="list__item">— для сердца и сосудов</li>
-                                                <li class="list__item">— для геникологии и акушерства</li>
-                                                <li class="list__item">— 3d/4d аппараты</li>
-                                            </ul>
-                                            <div class="action">
-                                                <button>
-                                                    Консультация в один клик
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
+                                <a href="#" class="list__body_items_item">
+                                    @@include('./html/card.html')
                                 </a>
-                                <a href="#" class="list__body_items_item card">
-                                    <div class="card__img">
-                                        <picture>
-                                            <source srcset="" type="image/webp">
-                                            <img src="./img/apr/apr.png" alt="">
-                                        </picture>
-                                    </div>
-                                    <div class="card__body">
-                                        <div class="card__body_main">
-                                            <div class="name">Philips SE 310</div>
-                                            <div class="values">
-                                                <div class="values__price">
-                                                    от 2 800 000 ₽
-                                                </div>
-                                                <div class="values__cnt">
-                                                    9/10
-                                                </div>
-                                            </div>
-                                            <div class="link">
-                                                <div>Подробнее</div>
-                                            </div>
-                                        </div>
-                                        <div class="card__body_ex">
-                                            <div class="head">
-                                                В категориях
-                                            </div>
-                                            <ul class="list">
-                                                <li class="list__item">— для сердца и сосудов</li>
-                                                <li class="list__item">— для геникологии и акушерства</li>
-                                                <li class="list__item">— 3d/4d аппараты</li>
-                                            </ul>
-                                            <div class="action">
-                                                <button>
-                                                    Консультация в один клик
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
+                                <a href="#" class="list__body_items_item">
+                                    @@include('./html/card.html')
                                 </a>
-                                <a href="#" class="list__body_items_item card">
-                                    <div class="card__img">
-                                        <picture>
-                                            <source srcset="" type="image/webp">
-                                            <img src="./img/apr/apr.png" alt="">
-                                        </picture>
-                                    </div>
-                                    <div class="card__body">
-                                        <div class="card__body_main">
-                                            <div class="name">Philips SE 310</div>
-                                            <div class="values">
-                                                <div class="values__price">
-                                                    от 2 800 000 ₽
-                                                </div>
-                                                <div class="values__cnt">
-                                                    9/10
-                                                </div>
-                                            </div>
-                                            <div class="link">
-                                                <div>Подробнее</div>
-                                            </div>
-                                        </div>
-                                        <div class="card__body_ex">
-                                            <div class="head">
-                                                В категориях
-                                            </div>
-                                            <ul class="list">
-                                                <li class="list__item">— для сердца и сосудов</li>
-                                                <li class="list__item">— для геникологии и акушерства</li>
-                                                <li class="list__item">— 3d/4d аппараты</li>
-                                            </ul>
-                                            <div class="action">
-                                                <button>
-                                                    Консультация в один клик
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
+                                <a href="#" class="list__body_items_item">
+                                    @@include('./html/card.html')
                                 </a>
                             </div>
                             <div class="list__body_action">
-                                <button>Показать еще</button>
+                                <button class="btn-more">
+                                    <div class="btn-more__text">показать еще</div>
+                                    <div class="btn-more__icon"></div>
+                                </button>
                             </div>
                         </div>
                     </div>

@@ -1,37 +1,32 @@
-import Swiper, {Navigation, Thumbs} from 'swiper';
+import Swiper, {Navigation, Pagination, Thumbs} from 'swiper';
 
 export const revsSlider = () => {
 
+    const el = document.querySelector('.revs__body_slider');
+
+    if(el) {
+        const mainSlider = new Swiper(el, {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            breakpoints: {
+                800: {
+                    slidesPerView: 1,
+                },
+                1200: {
+                    slidesPerView: 1,
+                }
+            },
+            modules: [Pagination],
+            pagination: {
+                el: '.revs__body_pag',
+                type: 'bullets',
+                bulletClass: 'revs__body_pag_item',
+                bulletActiveClass: 'active',
+            }
+        });
+    }
     
 
-    const mainThumbs = new Swiper('.revs__body_thumbs', {
-        slidesPerView: 4,
-        spaceBetween: 15,
-        modules: [Navigation],
-        loop: true,
-        navigation: {
-            prevEl: '.revs__body_thumbs_nav_prev',
-            nextEl: '.revs__body_thumbs_nav_next'
-        },
-        
-        
-    })
 
-    const mainSlider = new Swiper('.revs__body_slider', {
-        slidesPerView: 1,
-        spaceBetween: 20,
-        loop: true,
-        breakpoints: {
-            800: {
-                slidesPerView: 1,
-            },
-            1200: {
-                slidesPerView: 1,
-            }
-        },
-        modules: [Thumbs],
-        thumbs: {
-            swiper: mainThumbs
-        }
-    });
+    
 }

@@ -81,14 +81,20 @@ body {
 .section__title {
     font-weight: 700;
     font-size: 40px;
-    line-height: 52px;
+    line-height: 130%;
     color: $text;
 }
+@media (max-width: 1000px) {
 
+    .section__title {
+        font-size: 35px;
+        line-height: 130%;
+    }
+}
 @media (max-width: 650px) {
     .section__title {
-        font-size: 30px;
-        line-height: 39px;
+        font-size: 25px;
+        line-height: 130%;
     }
 }
 

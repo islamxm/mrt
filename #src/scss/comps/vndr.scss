@@ -1,0 +1,38 @@
+.vndr {
+    padding: 34px 10px;
+    display: flex;
+    align-items: center;
+    background: 
+    #F6F6F6;
+    border-radius: 10px;
+    
+
+    &__img {
+        flex: 0 0 auto;
+        margin-right: 30px;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__body {
+
+        &_name {
+            font-size: 20px;
+            line-height: 130%;
+        }
+
+        &_link {
+            font-size: 18px;
+            line-height: 130%;
+            @include def-anim;
+
+            &:hover {
+                color: $purp;
+            }
+        }
+    }
+}

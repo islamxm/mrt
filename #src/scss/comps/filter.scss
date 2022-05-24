@@ -62,7 +62,7 @@
                     input {
                         display: block;
                         width: 100%;
-                        border: 1px solid $blue;
+                        border: 1px solid $purp;
                         padding: 12px 15px;
                         background-color: #fff;
                         font-size: 16px;
@@ -77,8 +77,9 @@
         }
 
         &_info {
-            font-size: 25px;
-            line-height: 32px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 130%;
             
             span {
                 color: #969696;
@@ -122,7 +123,7 @@
 
                 input:checked ~ label {
                     .icon {
-                        background-color: $blue;
+                        background-color: $purp;
                         
                     }
                 }
@@ -136,7 +137,7 @@
                         width: 20px;
                         height: 20px;
                         border-radius: 2px;
-                        border: 1px solid $blue;
+                        border: 1px solid $purp;
                         margin-right: 20px;
                         margin-top: 5px;
                         flex: 0 0 auto;
@@ -162,7 +163,7 @@
             .filterToggler {
                 font-size: 18px;
                 line-height: 29px;
-                color: $blue;
+                color: $purp;
                 padding-right: 30px;
                 position: relative;
                 cursor: pointer;
