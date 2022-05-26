@@ -17,7 +17,7 @@
                 <div class="header__search" id="searchFeild">
                     <input type="text" placeholder="Я ищу...">
                     <button>
-                        Найти
+                        <span>Найти</span>
                     </button>
 
                     <div class="close" id="searchFieldClose">
@@ -45,7 +45,14 @@
             <div class="header__bottom">
                 <div class="header__left">
                     <ul class="header__nav">
-                        <li class="header__nav_item"><a href="#">МРТ аппараты</a></li>
+                        <li class="header__nav_item header__nav_item--dropdown">
+                            <a href="#">МРТ аппараты</a>
+                            <ul class="header__nav_item_subnav">
+                                <li class="header__nav_item_subnav_item"><a href="#">Полуоткрытого типа</a></li>
+                                <li class="header__nav_item_subnav_item"><a href="#">Открытого типа</a></li>
+                                <li class="header__nav_item_subnav_item"><a href="#">Закрытого типа</a></li>
+                            </ul>
+                        </li>
                         <li class="header__nav_item"><a href="#">Рейтинги</a></li>
                         <li class="header__nav_item"><a href="#">Статьи</a></li>
                         <li class="header__nav_item"><a href="#">Производители</a></li>

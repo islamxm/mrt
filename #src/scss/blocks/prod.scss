@@ -209,6 +209,20 @@
         margin-bottom: 50px;
         flex-wrap: wrap;
 
+        &_container {
+
+        }
+
+        &_content {
+
+            &_item {
+                display: none;
+            }
+
+            &_item.active {
+                display: block;
+            }
+        }
 
         &_item.active {
             color: $purp;
@@ -222,6 +236,7 @@
             line-height: 22px;
             margin-bottom: 15px;
             color: #AEAEAE;
+            cursor: pointer;
 
             @include def-anim;
 

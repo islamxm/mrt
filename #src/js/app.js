@@ -20,6 +20,7 @@ import { up } from './modules/up.js';
 
 
 import {heroSlider} from './modules/heroSlider.js';
+import { tabs } from './modules/tabs.js';
 
 
 
@@ -51,6 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     heroSlider();
+    tabs('.prod__tabs_container', '.prod__tabs', '.prod__tabs_item', '.prod__tabs_content_item');
 })
 
 
