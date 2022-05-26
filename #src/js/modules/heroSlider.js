@@ -6,6 +6,7 @@ export const heroSlider = () => {
     if(el) {
         const slider = new Swiper(el, {
             modules: [Navigation, Pagination],
+            spaceBetween: 20,
             navigation: {
                 prevEl: '.hero__nav_prev',
                 nextEl: '.hero__nav_next'
