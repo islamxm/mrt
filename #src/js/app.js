@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     heroSlider();
-    tabs('.prod__tabs_container', '.prod__tabs', '.prod__tabs_item', '.prod__tabs_content_item');
+    // tabs('.prod__tabs_container', '.prod__tabs', '.prod__tabs_item', '.prod__tabs_content_item');
 })
 
 

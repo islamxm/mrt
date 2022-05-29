@@ -177,6 +177,10 @@
                     line-height: 18px;
                     cursor: pointer;
                     @include def-anim;
+
+                    &:hover {
+                        background-color: #a081e5;
+                    }
                 }
             }
         }
@@ -223,6 +227,16 @@
 @media (max-width: 750px) {
 
     .card {
+
+        &:hover {
+
+            .card__body {
+                
+                &_main {
+                    padding: 15px 0 !important;
+                }
+            }
+        }
         
         &__body {
 

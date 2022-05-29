@@ -17,22 +17,15 @@
             justify-content: space-between;
 
             &_btn {
-                padding-right: 62px;
-                position: relative;
-                font-weight: 700;
-                font-size: 18px;
-                line-height: 18px;
-                color: $red;
+                width: 46px;
+                height: 30px;
+                background-image: url('../img/icons/filter.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
                 cursor: pointer;
                 display: none;
-                
-
-                &:after {
-                    position: absolute;
-                    right: 0;
-                    top: calc(50% - 15px);
-                    content: url('../img/icons/filter.svg');
-                }
+            
             }
         }
 
@@ -117,8 +110,22 @@
 
         &__body {
 
+            &_head {
+
+                &_btn {
+                    width: 30px;
+                    height: 20px;
+                }
+            }
+
             &_filter {
                 margin-bottom: 30px;
+
+                &_item {
+                    width: 100%;
+                    justify-content: flex-start;
+                }
+
                 &_name {
                     font-size: 18px;
                     line-height: 18px;

@@ -1,6 +1,6 @@
 .rts {
     .container {
-        padding: 0;
+        // padding: 0;
     }
     &__in {
         padding: 40px 0;
@@ -19,6 +19,15 @@
             max-width: 970px;
             width: 100%;
             margin-bottom: 30px;
+            @include def-anim;
+
+
+            &:hover {
+
+                .rts__body_item_content_title {
+                    color: $purp;
+                }
+            }
 
             &:last-child {
                 margin-bottom: 0;
@@ -81,9 +90,6 @@
                     font-weight: 400;
                     @include def-anim;
 
-                    &:hover {
-                        color: $purp;
-                    }
                 }
 
                 &_text {

@@ -14,7 +14,7 @@
         padding-bottom: 43px;
         &_slider {
             padding: 0;
-            width: 60%;
+            width: 70%;
             margin: 0 auto 0 0;
             overflow: visible;
             
@@ -119,15 +119,12 @@
         &__body {
 
             &_slider {
-                width: 100%;
+                
 
                 &_sl {
                     padding: 20px 15px;
 
-                    .text {
-                        font-size: 16px;
-                        line-height: 20px;
-                    }
+                    
 
                     .info {
                         flex-wrap: wrap;
@@ -140,11 +137,26 @@
                             width: 100%;
 
                             &_ex {
-                                font-size: 16px;
-                                line-height: 20px;
+                                
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .revs {
+
+        &__body {
+
+            &_slider {
+                width: 100%;
+                &_sl {
+
                 }
             }
         }
@@ -157,6 +169,35 @@
 
         &__in {
             padding: 25px 0;
+        }
+
+        &__body {
+
+            &_slider {
+
+                &_sl {
+
+                    .text {
+                        font-size: 16px;
+                        line-height: 21px;
+                    }
+
+                    .info {
+
+                        &__descr {
+
+                            &_head {
+                                font-size: 18px;
+                                line-height: 23px;
+                            }
+                            &_ex {
+                                font-size: 16px;
+                                line-height: 20px;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

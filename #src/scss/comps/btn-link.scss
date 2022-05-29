@@ -2,6 +2,13 @@
     display: flex;
     align-items: center;
 
+    &:hover {
+
+        .btn-link__icon {
+            transform: translateX(10px);
+        }
+    }
+
     &__text {
         font-weight: 400;
         font-size: 22px;
@@ -16,6 +23,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: 25px 25px;
+        @include def-anim;
     }
 }
 

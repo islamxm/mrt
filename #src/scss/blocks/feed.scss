@@ -2,7 +2,7 @@
     
 
     &__in {
-
+        padding: 40px 0;
     }
 
     &__body {
@@ -11,7 +11,7 @@
         display: flex;
         align-items: flex-end;
         padding-left: 50px;
-        justify-content: space-between;
+        // justify-content: space-between;
 
         &_img {
 
@@ -27,6 +27,8 @@
             padding: 75px 100px 75px 60px;
             display: flex;
             align-items: center;
+            flex: 1 0 auto;
+            justify-content: space-between;
 
             &_descr {
                 max-width: 386px;
@@ -78,6 +80,11 @@
                     font-weight: 700;
                     font-size: 18px;
                     line-height: 18px;
+                    @include def-anim;
+
+                    &:hover {
+                        background-color: #535353;
+                    }
                 }
 
                 &_ex {
@@ -114,6 +121,7 @@
                 padding: 40px 20px;
                 order: 1;
                 flex-wrap: wrap;
+                flex: unset;
 
                 &_descr {
                     width: 100%;

@@ -6,9 +6,6 @@ export const cmAnswer = () => {
     answer.classList.add('prod__comment_body');
 
     answer.innerHTML = `
-        <div class="prod__comment_body_h">
-        Написать с помощью +
-        </div>
         <div class="prod__comment_body_inp">
             <input type="text" placeholder="Имя">
         </div>
