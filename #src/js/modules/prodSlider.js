@@ -22,7 +22,7 @@ export const prodSlider = () => {
                 spaceBetween: 20,
                 direction: 'vertical',
             },
-            800: {
+            801: {
                 direction: 'vertical',
             },
             550: {

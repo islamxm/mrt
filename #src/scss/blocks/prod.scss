@@ -319,7 +319,7 @@
 
 
         &_item {
-            margin-bottom: 50px;
+            // margin-bottom: 50px;
             
 
             &_head {
@@ -981,7 +981,7 @@
 
 
         &__main {
-
+            
             &_content {
                 flex-wrap: wrap;
                 justify-content: space-between;
@@ -1002,15 +1002,35 @@
                 width: 48%;
                 max-width: unset;
                 order: 4;
+                margin-top: 20px;
             }
 
             &_adv {
                 order: 3;
                 width: 48%;
                 max-width: unset;
+                
             }
         }
 
+    }
+}
+
+@media (max-width: 1060px) {
+
+    .prod {
+
+
+        &__main {
+
+            &_thumbs {
+                
+            }
+            &_slider {
+                max-width: unset;
+                width: 70%;
+            }
+        }
     }
 }
 
@@ -1097,16 +1117,7 @@
                 }
 
                 &_body {
-                    .char {
-
-                        &__list {
-        
-                            &_item {
-                                font-size: 22px;
-                                line-height: 29px;
-                            }
-                        }
-                    }
+                    
                 }
             }
 
@@ -1245,16 +1256,7 @@
                     max-height: 391px;
                 }
 
-                .char {
-
-                    &__list {
-
-                        &_item {
-                            font-size: 16px;
-                            line-height: 18px;
-                        }
-                    }
-                }
+                
 
                 .spr {
 
@@ -1286,6 +1288,53 @@
         &__sml {
 
             
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .prod {
+
+        &__descr {
+
+            &_item {
+
+                &_body {
+                    .char {
+
+                        &__list {
+        
+                            &_item {
+                                font-size: 22px;
+                                line-height: 29px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &__comment {
+
+            &_body {
+
+                &_inp {
+                    max-width: unset;
+                    width: 100%;
+                    margin: 0;
+                    margin-bottom: 10px;
+                    input {
+                        width: 100%;
+
+                    }
+                }
+
+                &_text {
+                    margin-top: 0;
+                }
+            }
         }
     }
 }
@@ -1344,6 +1393,17 @@
 
                         &__item {
                             padding: 15px;
+                        }
+                    }
+
+                    .char {
+
+                        &__list {
+    
+                            &_item {
+                                font-size: 16px;
+                                line-height: 18px;
+                            }
                         }
                     }
                 }

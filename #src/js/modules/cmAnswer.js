@@ -11,7 +11,6 @@ export const cmAnswer = () => {
         </div>
         <div class="prod__comment_body_inp">
             <input type="email" placeholder="Email">
-            <div class="prod__comment_body_inp_ex">*Email будет скрыт </div>
         </div>
         <div class="prod__comment_body_text">
             <textarea placeholder="Комментарий..."></textarea>
