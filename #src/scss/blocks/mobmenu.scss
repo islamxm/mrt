@@ -26,7 +26,7 @@
 
     &__head {   
         // margin-bottom: 50px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
 
         &_top {
             display: flex;
@@ -69,7 +69,7 @@
     }
 
     &__list {
-        flex: 1 0 auto;
+        
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -109,7 +109,7 @@
     }
 
     &__links {
-        // flex: 1 0 auto;
+        flex: 1 0 auto;
         display: flex;
         justify-content: space-evenly;
         align-items: flex-end;

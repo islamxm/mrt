@@ -1963,7 +1963,7 @@ body {
   flex-direction: column;
 }
 .mobmenu__head {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .mobmenu__head_top {
   display: flex;
@@ -2000,7 +2000,6 @@ body {
   line-height: 130%;
 }
 .mobmenu__list {
-  flex: 1 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2028,6 +2027,7 @@ body {
   color: #474747;
 }
 .mobmenu__links {
+  flex: 1 0 auto;
   display: flex;
   justify-content: space-evenly;
   align-items: flex-end;
@@ -2599,17 +2599,24 @@ body {
   max-width: 310px;
   width: 100%;
 }
-.feed__body_content_form input {
+.feed__body_content_form_input {
+  text-align: center;
   background: #F5F5F5;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
   margin-bottom: 10px;
+}
+.feed__body_content_form input {
   padding: 16px 10px;
+  padding-left: 0;
+  padding-right: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
   font-size: 18px;
   line-height: 18px;
+  width: 52%;
 }
 .feed__body_content_form button {
   padding: 16px 0;
@@ -2634,22 +2641,28 @@ body {
   font-weight: 400;
   font-size: 15px;
   line-height: 130%;
-  color: #fff;
+  color: #C2A6FF;
 }
 .feed__body_content_form_ex a {
-  color: #C2A6FF;
+  color: #fff;
 }
 
 @media (max-width: 1200px) {
   .feed__body {
+    position: relative;
     padding-left: 0;
+    overflow: hidden;
   }
   .feed__body_img {
     order: 2;
     transform: scale(-1, 1);
     position: relative;
     flex: 1 0 auto;
-    height: 100%;
+    height: 103%;
+    position: absolute;
+    bottom: 0;
+    right: -10%;
+    z-index: 0;
   }
   .feed__body_img img {
     width: 100%;
@@ -2661,6 +2674,8 @@ body {
     flex-wrap: wrap;
     flex: unset;
     width: 60%;
+    position: relative;
+    z-index: 2;
   }
   .feed__body_content_descr {
     width: 100%;
@@ -2671,8 +2686,11 @@ body {
     width: 100%;
     max-width: unset;
   }
+  .feed__body_content_form_input input {
+    width: auto;
+  }
 }
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .feed__body {
     flex-wrap: wrap;
   }
@@ -2683,6 +2701,8 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+    position: static;
+    height: unset;
   }
 }
 @media (max-width: 650px) {

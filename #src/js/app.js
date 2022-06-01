@@ -27,8 +27,6 @@ import { tabs } from './modules/tabs.js';
 document.addEventListener('DOMContentLoaded', () => {
     flsFuncs.isWebp();
 
-
-
     up();
     searchFieldToggler();
     mobmenuToggler();
@@ -47,10 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
     revsSlider();
     addC();
     telMask(); 
-    
-    
-
-
     heroSlider();
     // tabs('.prod__tabs_container', '.prod__tabs', '.prod__tabs_item', '.prod__tabs_content_item');
 })
