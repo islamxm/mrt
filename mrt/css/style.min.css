@@ -2687,7 +2687,7 @@ body {
     max-width: unset;
   }
   .feed__body_content_form_input input {
-    width: auto;
+    width: 160px;
   }
 }
 @media (max-width: 769px) {
